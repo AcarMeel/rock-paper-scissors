@@ -1,0 +1,49 @@
+@import '../../assets/variables';
+
+.game-container {
+    padding-top: 10rem;
+
+    .triangle {
+        position: relative;
+    }
+
+    button {
+        position: absolute;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        &:active {
+            transform: translateY(5px);
+            .outer-circle {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .paper {
+        top: -50px;
+        left: -50px;
+        .outer-circle {
+            background: $paper-gradient;
+            box-shadow: 0 5px rgb(31, 12, 210);
+        }
+    }
+
+    .scissors {
+        top: -50px;
+        right: -50px;
+        .outer-circle {
+            background: $scissors-gradient;
+            box-shadow: 0 5px rgb(184, 109, 4);
+        }
+    }
+
+    .rock {
+        right: 80px;
+        bottom: 0;
+        .outer-circle {
+            background: $rock-gradient;
+            box-shadow: 0 5px rgb(162, 5, 68);
+        }
+    }
+}

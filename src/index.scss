@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+@import './assets/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    color: $header-text;
+    font-size: 1rem;
+}
+
+.app {
+    position: relative;
+    background: $radial-gradient;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.as-row {
+    flex-direction: row;
+}
+
+.as-column {
+    flex-direction: column;
+}
+
+.pt-md {
+    padding-top: 32px;
+}
+
+.outer-circle {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    
+    display: flex;
+}
+
+.inner-circle {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    margin: auto;
+    text-align: center;
+    padding: 24px;
+}

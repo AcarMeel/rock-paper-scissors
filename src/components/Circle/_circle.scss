@@ -1,0 +1,25 @@
+@import '../../assets/variables';
+
+.circle-container {
+    display: block;
+    h3 {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 24px;
+    }
+    .outer-circle {
+        &.paper {
+            background: $paper-gradient;
+            box-shadow: 0 5px rgb(31, 12, 210);
+        }
+        &.scissors {
+            background: $scissors-gradient;
+            box-shadow: 0 5px rgb(184, 109, 4);
+        }
+        &.rock {
+            background: $rock-gradient;
+            box-shadow: 0 5px rgb(162, 5, 68);
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import '../../assets/variables';
+
+.results-container {
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+
+    .game-results {
+        padding: 5rem;
+        h2 {
+            font-size: 39px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        button {
+            background-color: #fff;
+            color: $red;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 12px 32px;
+            border-radius: 6px;
+            border: none;
+            margin-top: 24px;
+            cursor: pointer;
+        }
+    }
+}

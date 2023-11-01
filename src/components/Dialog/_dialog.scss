@@ -1,0 +1,52 @@
+@import '../../assets/variables';
+
+.rules-dialog {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(#333, 0.6);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .dialog-body {
+        position: relative;
+        background-color: #fff;
+        width: 300px;
+        height: auto;
+        z-index: 1;
+        border-radius: 10px;
+        padding: 24px;
+        
+        .dialog-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            h1 {
+                text-transform: uppercase;
+                margin: 0;
+                padding: 0;
+            }
+            img {
+                width: 16px;
+                height: 16px;
+            }
+            button.close {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        .dialog-content {
+            margin-top: 32px;
+            text-align: center;
+            img {
+                max-width: 200px;
+                width: 100%;
+            }
+        }
+    }
+}
